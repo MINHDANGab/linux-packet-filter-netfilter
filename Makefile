@@ -1,4 +1,4 @@
-obj-m += icmp_rl_fw.o
+obj-m += fw_netlink_kmod.o
 
 KDIR := /lib/modules/$(shell uname -r)/build
 PWD := $(shell pwd)
@@ -8,4 +8,3 @@ all:
 
 clean:
 	$(MAKE) -C $(KDIR) M=$(PWD) clean
-
